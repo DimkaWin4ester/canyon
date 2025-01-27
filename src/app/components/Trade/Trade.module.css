@@ -1,0 +1,82 @@
+.trade {
+  width: 100%;
+  height: 100%;
+  max-width: 523px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 20px;
+  background: linear-gradient(
+    to bottom,
+    rgba(34, 35, 66, 1) 0%,
+    rgba(34, 35, 66, 0) 100%
+  );
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
+}
+
+.tabs {
+  display: flex;
+  gap: 14px;
+}
+.tabs span:first-child {
+  color: var(--color-font-white);
+  font-weight: 600;
+}
+.tabs span:last-child {
+  color: var(--color-font-white-transparent30);
+}
+.sellbuy {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.sell {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-BG-white-transparent4);
+  border-radius: 20px;
+  padding: 18px 24px;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--color-font-white-transparent70);
+}
+
+
+.buy {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-BG-white-transparent20);
+  border-radius: 20px;
+  padding: 18px 24px;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--color-font-white-transparent70);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  padding: 11px 21px;
+  gap: 12px;
+  background-color: var(--color-BG-white-transparent);
+  border-radius: 10px;
+}
+.price span:last-child {
+  color: var(--color-button);
+}
+
+.button {
+  background-color: var(--color-button);
+  height: 56px;
+  border-radius: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28.8px;
+  color: var(--color-font-white);
+}

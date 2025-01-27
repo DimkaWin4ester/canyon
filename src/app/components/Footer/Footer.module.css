@@ -1,0 +1,27 @@
+.footer {
+  width: 100%;
+  background-color: var(--color-BG-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (max-width: 895px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.separator {
+  width: 1px;
+  height: 26px;
+  background-color: var(--color-font-grey);
+  margin: 0 11px;
+}
