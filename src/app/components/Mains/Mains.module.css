@@ -4,4 +4,12 @@
   justify-content: center;
   width: 100%;
   max-width: 523px;
+  margin-top: 56px;
+  flex-grow: 1;
+
+  @media (max-width: 576px) {
+    margin-top: 20px;
+    max-width: 100%;
+    padding: 0 20px;
+  }
 }

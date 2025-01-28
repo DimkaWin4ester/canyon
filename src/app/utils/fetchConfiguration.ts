@@ -11,6 +11,5 @@ export async function fetchConfiguration(accessToken: string) {
   const configuration = await data
     .json()
     .then((data) => data.data?.configurationKey);
-  console.log(configuration);
   return configuration;
 }

@@ -22,7 +22,6 @@ export default function Mains() {
     }
   }, [accessToken]);
 
-  // console.log(configuration, 'tut');
   return (
     <main className={styles.main}>
       {isLoading && <p>Loading...</p>}

@@ -2,10 +2,17 @@
   width: 100%;
   height: 100%;
   max-width: 1440px;
-  max-height: 1024px;
   color: var(--color-font-grey);
-  margin: 40px 96px;
+  padding: 40px 96px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 720px) {
+    padding: 40px 20px;
+  }
+
+  @media (max-width: 576px) {
+    padding: 0;
+  }
 }
