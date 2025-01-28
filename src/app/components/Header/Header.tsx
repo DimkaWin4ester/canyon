@@ -8,7 +8,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.titleLinks}>
         <div className={styles.title}>
-          <Image src="/logo.svg" alt="logo" width={32} height={32} />
+          <Image src="/logo.svg" alt="logo" width={32} height={32} priority/>
           <h1>Canyon Swap</h1>
         </div>
 

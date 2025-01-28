@@ -10,22 +10,19 @@ import { fetchConfiguration } from '@/app/utils/fetchConfiguration';
 export default function Mains() {
   const [accessToken, setAccessToken] = useState('');
   const [configuration, setConfiguration] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     checkAccessTokenLS().then((data: string) => setAccessToken(data));
     if (accessToken) {
       fetchConfiguration(accessToken).then((data) => {
         setConfiguration(data);
-        setIsLoading(false);
       });
     }
   }, [accessToken]);
 
   return (
     <main className={styles.main}>
-      {isLoading && <p>Loading...</p>}
-      {isLoading ? null : configuration ? <Trade configuration={configuration} /> : <Login />}
+      { configuration ? <Trade configuration={configuration} /> : <Login />}
 
     </main>
   );
